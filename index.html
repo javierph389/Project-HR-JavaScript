@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Generador de Ficha</title>
+</head>
+<body>
+    <nav class="menunav">
+        <div id="login">
+            <div id="cajalogin">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="loginu" name="usuario">
+                <label for="usuario">Contraseña:</label>
+                <input type="password" id="loginp" name="password">
+                <button id="btnlog">Ingresar</button>
+            </div>
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a id="instrucc" href="#">Instrucciones de Uso</a></li>
+                <li><a id="contacto" href="#">Contacto</a></li>
+                <li><a id="about" href="#">Acerca de</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <div id="instruc" style="display:none">
+        <p>Primero ingrese con su usuario y contraseña, luego haga click en "Iniciar Proceso" para comenzar el registro del colaborador.</p>
+    </div>
+
+    <div id="contact" style="display:none">
+        <p>En caso de presentarse algún problema, escribir a contacto@rrhh.com</p>
+    </div>
+
+    <div id="acerca" style="display:none">
+        <p>Realizado por Javier Pérez Herrera</p>
+    </div>
+    <main>
+        
+        <h1 class="titulo">Generador de Ficha de Personal</h1>
+        <h2 class="titulo">Gerencia de Recursos Humanos</h2>
+        <h3 class="titulo">Página de autoregistro</h3>
+        
+        <div class="btn-cont">
+            <button id="btniniciar" class="btn-iniciar" >Iniciar Proceso</button>
+        </div>
+        <div class="identif separ">
+            <h3>Identificación del Usuario Creado</h3>
+            <div id="usercreated">
+            </div>
+        </div>
+        <div class="identif separ">
+            <div id="usering"></div>
+        </div>
+        <section>
+            <div id="seccionbono" style="display:none">
+                <h4 class="identif">Averigua si recibirás tu bono de fin de mes:</h4>
+                <p class="identif">Ingrese Renta Bruta:</p>
+                <!-- Si la persona recibe más de 200000, no recibirá bono -->
+                <div class="identif">
+                    <input type="number" placeholder="Ingrese sueldo bruto" id="valorSueldo">
+                    <button id="btnbono" type="button">Calcular</button>
+                </div>
+                <p id="calculoTot" class="identif"></p>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="containerfooter">
+            <p class="textofooter">Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
