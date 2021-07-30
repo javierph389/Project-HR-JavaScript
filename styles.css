@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+}
+
+nav {
+    background: #004b7c;
+    color: white;
+    height: 85px;
+}
+
+#login {
+    padding: 0 0 0 15px;
+}
+
+.menunav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.menulogin {
+    padding: 0 0 0 15px;
+}
+
+
+.menu {
+    text-align: right;
+    padding: 0px 15px 0px 0px;
+    margin: 0;
+}
+
+#instruc {
+    margin: 0;
+    padding: 0;
+    background: #004b7c;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#contact {
+    margin: 0;
+    padding: 0;
+    background: #004b7c;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#acerca {
+    margin: 0;
+    padding: 0;
+    background: #004b7c;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.titulo {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.btn-cont {
+    margin: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-iniciar {
+    padding: 10px 20px 10px 20px;
+}
+
+.identif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separ {
+    margin-top: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;   
+    background: #004b7c;
+    color: white;
+}
+
+.containerfooter {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
